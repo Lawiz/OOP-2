@@ -1,0 +1,11 @@
+C:\Users\petrs.PETR\OneDrive\OOP-2\Laba1\Laba1\bin\Debug\Laba1.exe.config
+C:\Users\petrs.PETR\OneDrive\OOP-2\Laba1\Laba1\bin\Debug\Laba1.exe
+C:\Users\petrs.PETR\OneDrive\OOP-2\Laba1\Laba1\bin\Debug\Laba1.pdb
+C:\Users\petrs.PETR\OneDrive\OOP-2\Laba1\Laba1\obj\Debug\Laba1.csprojResolveAssemblyReference.cache
+C:\Users\petrs.PETR\OneDrive\OOP-2\Laba1\Laba1\obj\Debug\Laba1.Form1.resources
+C:\Users\petrs.PETR\OneDrive\OOP-2\Laba1\Laba1\obj\Debug\Laba1.Properties.Resources.resources
+C:\Users\petrs.PETR\OneDrive\OOP-2\Laba1\Laba1\obj\Debug\Laba1.csproj.GenerateResource.Cache
+C:\Users\petrs.PETR\OneDrive\OOP-2\Laba1\Laba1\obj\Debug\Laba1.csproj.CoreCompileInputs.cache
+C:\Users\petrs.PETR\OneDrive\OOP-2\Laba1\Laba1\obj\Debug\Laba1.exe
+C:\Users\petrs.PETR\OneDrive\OOP-2\Laba1\Laba1\obj\Debug\Laba1.pdb
+C:\Users\petrs.PETR\OneDrive\OOP-2\Laba1\Laba1\obj\Debug\Laba1.Form2.resources
