@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.checkBoxW = new System.Windows.Forms.CheckBox();
             this.checkBoxM = new System.Windows.Forms.CheckBox();
             this.textBoxSB = new System.Windows.Forms.TextBox();
@@ -66,8 +67,10 @@
             this.richTextBoxOutput = new System.Windows.Forms.RichTextBox();
             this.materialFlatButton1 = new MaterialSkin.Controls.MaterialFlatButton();
             this.materialFlatButton2 = new MaterialSkin.Controls.MaterialFlatButton();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.materialFlatButton3 = new MaterialSkin.Controls.MaterialFlatButton();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.SerchButton = new MaterialSkin.Controls.MaterialFlatButton();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAGE)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -99,6 +102,13 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Информация о студенте";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(215, 155);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 17;
             // 
             // checkBoxW
             // 
@@ -488,7 +498,7 @@
             // 
             // richTextBoxOutput
             // 
-            this.richTextBoxOutput.Location = new System.Drawing.Point(494, 290);
+            this.richTextBoxOutput.Location = new System.Drawing.Point(759, 287);
             this.richTextBoxOutput.Name = "richTextBoxOutput";
             this.richTextBoxOutput.Size = new System.Drawing.Size(246, 265);
             this.richTextBoxOutput.TabIndex = 0;
@@ -524,28 +534,51 @@
             this.materialFlatButton2.TabIndex = 18;
             this.materialFlatButton2.Text = "сохранить";
             this.materialFlatButton2.UseVisualStyleBackColor = true;
+            this.materialFlatButton2.Click += new System.EventHandler(this.materialFlatButton2_Click);
             // 
-            // dateTimePicker1
+            // materialFlatButton3
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(215, 155);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 17;
+            this.materialFlatButton3.AutoSize = true;
+            this.materialFlatButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialFlatButton3.Depth = 0;
+            this.materialFlatButton3.Location = new System.Drawing.Point(595, 574);
+            this.materialFlatButton3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialFlatButton3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialFlatButton3.Name = "materialFlatButton3";
+            this.materialFlatButton3.Primary = false;
+            this.materialFlatButton3.Size = new System.Drawing.Size(82, 36);
+            this.materialFlatButton3.TabIndex = 19;
+            this.materialFlatButton3.Text = "из файла";
+            this.materialFlatButton3.UseVisualStyleBackColor = true;
+            this.materialFlatButton3.Click += new System.EventHandler(this.materialFlatButton3_Click);
             // 
-            // richTextBox1
+            // openFileDialog1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(760, 290);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(246, 262);
-            this.richTextBox1.TabIndex = 19;
-            this.richTextBox1.Text = "";
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // SerchButton
+            // 
+            this.SerchButton.AutoSize = true;
+            this.SerchButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.SerchButton.Depth = 0;
+            this.SerchButton.Location = new System.Drawing.Point(494, 290);
+            this.SerchButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.SerchButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.SerchButton.Name = "SerchButton";
+            this.SerchButton.Primary = false;
+            this.SerchButton.Size = new System.Drawing.Size(59, 36);
+            this.SerchButton.TabIndex = 20;
+            this.SerchButton.Text = "Поиск";
+            this.SerchButton.UseVisualStyleBackColor = true;
+            this.SerchButton.Click += new System.EventHandler(this.SerchButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1018, 622);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.SerchButton);
+            this.Controls.Add(this.materialFlatButton3);
             this.Controls.Add(this.materialFlatButton2);
             this.Controls.Add(this.materialFlatButton1);
             this.Controls.Add(this.richTextBoxOutput);
@@ -607,7 +640,10 @@
         private MaterialSkin.Controls.MaterialFlatButton materialFlatButton1;
         private MaterialSkin.Controls.MaterialFlatButton materialFlatButton2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
+        private MaterialSkin.Controls.MaterialFlatButton materialFlatButton3;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private MaterialSkin.Controls.MaterialFlatButton SerchButton;
     }
 }
 

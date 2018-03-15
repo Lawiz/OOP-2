@@ -8,6 +8,5 @@ namespace Laba2
 {
     public class Data:List<Student>
     {
-        public static event Action addElemt;
     }
 }

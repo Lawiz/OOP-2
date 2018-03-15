@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 namespace Laba2
 {
-    class Validator
+    public class Validator
     {
         private const string Error_msg ="некорректный ввод";
         private const string Error_mas_checkBox = "Выберите один элемент";

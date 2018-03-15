@@ -10,7 +10,7 @@ using ExtendedXmlSerializer.Configuration;
 using ExtendedXmlSerializer.ExtensionModel.Xml;
 namespace Laba2
 {
-    public class DataSave
+    public  class DataSave
     {
         public DataJson SaveInJsonFormat(Data data)
         {
@@ -31,6 +31,24 @@ namespace Laba2
 
             }
             return dataXml;
+        }
+        public void SaveInTxtJson(Data data,string path)
+        {
+            string json = JsonConvert.SerializeObject(data, Formatting.Indented);
+
+
+            using(StreamWriter writer=new StreamWriter(path))
+            {
+                writer.Write(json);
+            }
+
+
+
+        }
+        public Data DeserialiseFromJson(string Json)
+        {
+
+            return JsonConvert.DeserializeObject<Data>(Json);
         }
 
 

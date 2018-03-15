@@ -8,6 +8,7 @@ namespace Laba2
 {
     public static class Program
     {
+
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
@@ -18,7 +19,9 @@ namespace Laba2
             {
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(new Form1());
+                Form1 form1 = new Form1();
+
+                Application.Run(form1);
             }
             catch(Exception ex)
             {
