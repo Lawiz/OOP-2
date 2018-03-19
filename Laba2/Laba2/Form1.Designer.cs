@@ -38,6 +38,14 @@
             this.comboBoxSpec = new System.Windows.Forms.ComboBox();
             this.numericUpDownAGE = new System.Windows.Forms.NumericUpDown();
             this.textBoxFIO = new System.Windows.Forms.TextBox();
+            this.Меню = new System.Windows.Forms.MenuStrip();
+            this.menuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.оПрограммеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.инструментыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.сохранитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.поискToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.изФайлаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.сортироватьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabelgrop = new MaterialSkin.Controls.MaterialLabel();
@@ -71,8 +79,10 @@
             this.materialFlatButton3 = new MaterialSkin.Controls.MaterialFlatButton();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SerchButton = new MaterialSkin.Controls.MaterialFlatButton();
+            this.BTSortAndSave = new MaterialSkin.Controls.MaterialFlatButton();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAGE)).BeginInit();
+            this.Меню.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
@@ -88,6 +98,7 @@
             this.groupBox1.Controls.Add(this.comboBoxSpec);
             this.groupBox1.Controls.Add(this.numericUpDownAGE);
             this.groupBox1.Controls.Add(this.textBoxFIO);
+            this.groupBox1.Controls.Add(this.Меню);
             this.groupBox1.Controls.Add(this.materialLabel8);
             this.groupBox1.Controls.Add(this.materialLabel7);
             this.groupBox1.Controls.Add(this.materialLabelgrop);
@@ -196,6 +207,74 @@
             this.textBoxFIO.Name = "textBoxFIO";
             this.textBoxFIO.Size = new System.Drawing.Size(192, 20);
             this.textBoxFIO.TabIndex = 8;
+            // 
+            // Меню
+            // 
+            this.Меню.Dock = System.Windows.Forms.DockStyle.None;
+            this.Меню.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
+            this.Меню.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuItem1});
+            this.Меню.Location = new System.Drawing.Point(149, 9);
+            this.Меню.Name = "Меню";
+            this.Меню.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.Меню.Size = new System.Drawing.Size(185, 24);
+            this.Меню.TabIndex = 23;
+            this.Меню.Text = "menuStrip1";
+            // 
+            // menuItem1
+            // 
+            this.menuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.оПрограммеToolStripMenuItem,
+            this.инструментыToolStripMenuItem});
+            this.menuItem1.Name = "menuItem1";
+            this.menuItem1.Size = new System.Drawing.Size(53, 20);
+            this.menuItem1.Text = "Меню";
+            // 
+            // оПрограммеToolStripMenuItem
+            // 
+            this.оПрограммеToolStripMenuItem.Name = "оПрограммеToolStripMenuItem";
+            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.оПрограммеToolStripMenuItem.Text = "О программе";
+            this.оПрограммеToolStripMenuItem.Click += new System.EventHandler(this.оПрограммеToolStripMenuItem_Click);
+            // 
+            // инструментыToolStripMenuItem
+            // 
+            this.инструментыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.сохранитьToolStripMenuItem,
+            this.поискToolStripMenuItem,
+            this.изФайлаToolStripMenuItem,
+            this.сортироватьToolStripMenuItem});
+            this.инструментыToolStripMenuItem.Name = "инструментыToolStripMenuItem";
+            this.инструментыToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.инструментыToolStripMenuItem.Text = "Инструменты";
+            // 
+            // сохранитьToolStripMenuItem
+            // 
+            this.сохранитьToolStripMenuItem.Name = "сохранитьToolStripMenuItem";
+            this.сохранитьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.сохранитьToolStripMenuItem.Text = "Сохранить";
+            this.сохранитьToolStripMenuItem.Click += new System.EventHandler(this.сохранитьToolStripMenuItem_Click);
+            // 
+            // поискToolStripMenuItem
+            // 
+            this.поискToolStripMenuItem.Name = "поискToolStripMenuItem";
+            this.поискToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.поискToolStripMenuItem.Text = "Поиск";
+            this.поискToolStripMenuItem.Click += new System.EventHandler(this.поискToolStripMenuItem_Click);
+            // 
+            // изФайлаToolStripMenuItem
+            // 
+            this.изФайлаToolStripMenuItem.Name = "изФайлаToolStripMenuItem";
+            this.изФайлаToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.изФайлаToolStripMenuItem.Text = "Из файла";
+            this.изФайлаToolStripMenuItem.Click += new System.EventHandler(this.изФайлаToolStripMenuItem_Click);
+            // 
+            // сортироватьToolStripMenuItem
+            // 
+            this.сортироватьToolStripMenuItem.Name = "сортироватьToolStripMenuItem";
+            this.сортироватьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.сортироватьToolStripMenuItem.Text = "Сортировать";
+            this.сортироватьToolStripMenuItem.Click += new System.EventHandler(this.сортироватьToolStripMenuItem_Click);
             // 
             // materialLabel8
             // 
@@ -572,11 +651,28 @@
             this.SerchButton.UseVisualStyleBackColor = true;
             this.SerchButton.Click += new System.EventHandler(this.SerchButton_Click);
             // 
+            // BTSortAndSave
+            // 
+            this.BTSortAndSave.AutoSize = true;
+            this.BTSortAndSave.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BTSortAndSave.Depth = 0;
+            this.BTSortAndSave.Location = new System.Drawing.Point(494, 338);
+            this.BTSortAndSave.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.BTSortAndSave.MouseState = MaterialSkin.MouseState.HOVER;
+            this.BTSortAndSave.Name = "BTSortAndSave";
+            this.BTSortAndSave.Primary = false;
+            this.BTSortAndSave.Size = new System.Drawing.Size(226, 36);
+            this.BTSortAndSave.TabIndex = 22;
+            this.BTSortAndSave.Text = "Отсортировать и сохранить";
+            this.BTSortAndSave.UseVisualStyleBackColor = true;
+            this.BTSortAndSave.Click += new System.EventHandler(this.BTSortAndSave_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1018, 622);
+            this.Controls.Add(this.BTSortAndSave);
             this.Controls.Add(this.SerchButton);
             this.Controls.Add(this.materialFlatButton3);
             this.Controls.Add(this.materialFlatButton2);
@@ -585,11 +681,14 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
+            this.MainMenuStrip = this.Меню;
             this.Name = "Form1";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAGE)).EndInit();
+            this.Меню.ResumeLayout(false);
+            this.Меню.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -644,6 +743,15 @@
         private MaterialSkin.Controls.MaterialFlatButton materialFlatButton3;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private MaterialSkin.Controls.MaterialFlatButton SerchButton;
+        private MaterialSkin.Controls.MaterialFlatButton BTSortAndSave;
+        private System.Windows.Forms.MenuStrip Меню;
+        private System.Windows.Forms.ToolStripMenuItem menuItem1;
+        private System.Windows.Forms.ToolStripMenuItem оПрограммеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem инструментыToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem сохранитьToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem поискToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem изФайлаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem сортироватьToolStripMenuItem;
     }
 }
 

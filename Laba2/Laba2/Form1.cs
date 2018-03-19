@@ -21,7 +21,7 @@ namespace Laba2
         public static  Validator Validator = new Validator();
         public static  DataSave DataSave = new DataSave();
         public static  DataSearch DataSearch = new DataSearch();
-
+        public static DataSorted dataSorted;
         public Form1()
         {
             InitializeComponent();
@@ -111,6 +111,64 @@ namespace Laba2
         {
             SerchForm serchForm = new SerchForm();
             serchForm.Show();
+        }
+
+        private void BTSortAndSave_Click(object sender, EventArgs e)
+        {
+            dataSorted = new DataSorted(data);
+            OpenFileDialog openFileDialog2 = new OpenFileDialog();
+            if (openFileDialog2.ShowDialog() == DialogResult.OK)
+            {
+                dataSorted.SaveSortedData(openFileDialog2.FileName);
+            }
+        }
+
+       
+
+        private void оПрограммеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Соболев Петр Сергеевич 2 курс 7 группа", "О программе");
+        }
+
+        private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                DataSave.SaveInTxtJson(data, openFileDialog1.FileName);
+
+            }
+        }
+
+        private void поискToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SerchForm serchForm = new SerchForm();
+            serchForm.Show();
+        }
+
+        private void изФайлаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                string json = default(string);
+                using (StreamReader file = new StreamReader(openFileDialog1.FileName))
+                {
+                    json = file.ReadToEnd();
+
+                };
+                data = JsonConvert.DeserializeObject<Data>(json);
+
+            }
+            viewdata(DataSave.SaveInJsonFormat(data), richTextBoxOutput);
+
+        }
+
+        private void сортироватьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            dataSorted = new DataSorted(data);
+            OpenFileDialog openFileDialog2 = new OpenFileDialog();
+            if (openFileDialog2.ShowDialog() == DialogResult.OK)
+                dataSorted.SaveSortedData(openFileDialog1.FileName);
         }
     }
 }

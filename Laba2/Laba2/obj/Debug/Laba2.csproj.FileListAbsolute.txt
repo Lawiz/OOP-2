@@ -114,6 +114,7 @@ C:\Users\petrs.PETR\OneDrive\OOP-2\Laba2\Laba2\bin\Debug\System.Interactive.dll
 C:\Users\petrs.PETR\OneDrive\OOP-2\Laba2\Laba2\bin\Debug\JetBrains.Annotations.xml
 C:\Users\petrs.PETR\OneDrive\OOP-2\Laba2\Laba2\bin\Debug\System.Collections.Immutable.xml
 C:\Users\petrs.PETR\OneDrive\OOP-2\Laba2\Laba2\bin\Debug\System.Interactive.xml
-C:\Users\petrs.PETR\OneDrive\OOP-2\Laba2\Laba2\obj\Debug\Laba2.csproj.Laba2.exe.config
 C:\Users\petrs.PETR\OneDrive\OOP-2\Laba2\Laba2\obj\Debug\Laba2.SearchResult.resources
 C:\Users\petrs.PETR\OneDrive\OOP-2\Laba2\Laba2\obj\Debug\Laba2.SerchForm.resources
+C:\Users\petrs.PETR\OneDrive\OOP-2\Laba2\Laba2\obj\Debug\Laba2.exe.config
+C:\Users\petrs.PETR\OneDrive\OOP-2\Laba2\Laba2\obj\Debug\Laba2.csproj.CopyComplete
